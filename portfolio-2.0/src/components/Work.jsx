@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkImg from '../assets/workImg.jpeg';
 import realEstate from '../assets/realestate.jpg';
+import linkedIn from '../assets/linkedin'
 
 const Work = () => {
   return (
@@ -24,15 +25,15 @@ const Work = () => {
             {/* Hover Effects */}
             <div className='opacity-0 group-hover:opacity-100'>
               <span className='text-2xl font-bold text-white tracking-wider'>
-                React JS Application
+                React JS linkedIn Clone
               </span>
               <div className='pt-8 text-center'>
-                <a href='/'>
+                <a href='https://linkedin-clone-fbe11.web.app/'>
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='/'>
+                <a href='https://github.com/harrised94/linkedIn-clone'>
                   <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
