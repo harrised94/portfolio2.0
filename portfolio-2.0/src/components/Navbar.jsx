@@ -7,11 +7,25 @@ import {Link} from 'react-scroll'
 
 
 const Navbar = () => {
+    // mobile nav
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
 
+    // change nav color when scrolling
+    const [color, setColor] = useState(false);
+    
+    const changeColor = () => {
+        if (window.scrollY >= 500) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeColor);
+
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 font-[500]'>
+    <div className={color ? 'bg-[#000]/50 fixed w-full h-[40px] flex justify-between items-center px-4 text-gray-300 font-[500] duration-300 z-10' : 'fixed w-full h-[80px] flex justify-between items-center px-4 text-gray-300 font-[500] duration-300 z-10'}>
         <div>
             <img src={Logo} alt="Logo Image" style={{width: '50px'}} />
         </div>

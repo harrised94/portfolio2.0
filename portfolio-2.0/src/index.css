@@ -25,7 +25,33 @@
 .content-div:hover {
     background-image: linear-gradient(
         to right,
-        rgba(112, 157, 255, 0.8),
+        rgba(32, 162, 246, 0.8),
         hsla(242, 74%, 61%, 0.8)
     )!important;
+}
+
+.homepage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: inherit;
+    background-image: url('./assets/backgroundImg3.jpg');
+    animation: hue 10s infinite;
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0);
+    }
+
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.skills {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: inherit;
 }
