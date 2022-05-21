@@ -1,7 +1,7 @@
 import React from 'react';
 import WorkImg from '../assets/workImg.jpeg';
 import realEstate from '../assets/realestate.jpg';
-import linkedIn from '../assets/linkedin'
+import linkedIn from '../assets/linkedin.PNG'
 
 const Work = () => {
   return (
